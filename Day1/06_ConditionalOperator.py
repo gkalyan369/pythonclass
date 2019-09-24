@@ -1,4 +1,4 @@
-for i in range(10, 0, -1):
+for i in range(14, 0, -1):
     if i == 14:
         break
     elif i == 9:
@@ -19,7 +19,7 @@ num2 = eval(num2)
 #   Do the arithmetic operations based on operator
 # +, -, *, /
 if oper == "+":
-    print("{} + {} = {}".format(num1, num2, num1+num2))
+    print("{0} + {1} = {2}".format(num1, num2, num1+num2))
 elif oper == "-":
     print("{} - {} = {}".format(num1, num2, num1 - num2))
 elif oper == "*":

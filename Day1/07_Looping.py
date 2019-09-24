@@ -31,8 +31,18 @@ else:       # executes if loop terminates normally
 # print odd numbers less than 20. Terminate loop if number is 15.
 print("\nWhile loop...")
 i = 1
-while i <= 20:
+while i <= 20 :    
     if (i % 2) == 0:
+        i += 1
+        continue
+    
+    if i == 15:
+         break
+    else :
+         print ("Odd number is:", i)
+    i += 1
+else:
+    print ("Normal Exit")
         i += 1
         continue
 

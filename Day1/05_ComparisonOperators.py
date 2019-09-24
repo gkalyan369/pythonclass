@@ -1,4 +1,4 @@
-age = 2
+age = int (input ("Enter the age:"))
 
 if age >= 18:
     print("Go cast your vote!")
