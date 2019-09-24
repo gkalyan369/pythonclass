@@ -1,5 +1,5 @@
 NumList = [10, 3, 667]
-AnyElement = ["Ganesh", 43, "Dec"]
+AnyElement = ["Ganesh", "43", "Dec"]
 intSeq = list(range(1, 10))
 
 joined_List = NumList + intSeq
