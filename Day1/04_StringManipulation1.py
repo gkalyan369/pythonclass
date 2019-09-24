@@ -29,7 +29,7 @@ print("Char representing unicode 65 is: ", chr(65))
 
 # use a string in for loop to access each char
 for c in sample_str:
-    print(c, ",", end="", sep=" ")
+    print(c, ",", end="", sep="")
 print("")
 
 
@@ -56,9 +56,12 @@ print("space: ", "\t".isspace())
 
 # Try it yourself
 # print the third last character
-
+s="kalyan"
+print ( s[-3])
 
 # print the no of times char 'd' is found
-
+print (s.count("a"))
 
 # print the char found after 'y'
+
+print (s[s.find("y")+1])

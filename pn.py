@@ -11,3 +11,7 @@ if (value >=0):
     print ("Value {} is positive".format(value))
 else :
     print ("Value {} is negative".format(value))
+    
+s="Hello"
+
+print ( s[-1:0:-1])
