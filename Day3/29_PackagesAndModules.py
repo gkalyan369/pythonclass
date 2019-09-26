@@ -4,12 +4,15 @@
 # import sys
 # sys.path.insert(0, "demos.zip/lib")
 
-import demoPack.drawings.myModule as myModule
+import Day3.demoPack.drawings.myModule as myModule
+from Day3.demoPack import testModule
+
+testModule.sampleFunction()
 
 b = myModule.Box(2, 3, 5)
 print(b.displayBox())
 
-myModule.testMod()
+print(myModule.testMod())
 
 
 
