@@ -1,31 +1,32 @@
 import os, sys, os.path, subprocess, glob
 
 # Check if file/path exists
-print(os.path.exists("C:\\Users\\TrgDev\\PycharmProjects\\TrainingDemo\\JPMC\\sample.txt"))
+print(os.path.exists("C:\\Users\Abridge\Desktop\PythonLearning\\sample.txt"))
 
 # Path components of a file
-names = os.path.split("C:\\Users\\TrgDev\\PycharmProjects\\TrainingDemo\\JPMC\\sample.txt")
+names = os.path.split("C:\\Users\Abridge\Desktop\PythonLearning\\sample.txt")
 print(names)
 
 # Build paths using path seperator for easy porting
-path_comp = ["C:", "Users", "TrgDev", "PycharmProjects", "TrainingDemo", "JPMC", "sample.txt"]
+path_comp = ["C:", "Users", "Abridge", "Abridge", "PythonLearning", "PythonLearning", "sample.txt"]
 file_path = os.path.sep.join(path_comp)
-
+#print(file_path)
 
 
 # Rename files
-os.rename("sample_file.txt", "sample.txt")
+os.rename("sample.txt","sample_file.txt")
 os.remove("dataFile.txt")
 os.mkdir("subDir")
 os.chdir("Day2")
 print(os.getcwd())
 os.rmdir("subDir")
 
+
 ### fileinput
 # for processing contents of multiple files as a stream of lines
 import fileinput
 
-file_names = ['dataFile.txt', 'sample.txt']
+file_names = ['Employee.txt', 'sample_file.txt']
 for line in fileinput.input(file_names):
     print("{}. line no {} of file {}: {}".format(fileinput.lineno(), fileinput.filelineno(), fileinput.filename(), line), end='')
 
@@ -60,7 +61,7 @@ def walktree(top, processFile):
 def processFile(pathname):
     print(pathname)
 
-walktree('D:\Training\Python\PycharmProjects\TrainingDemo\JPMC', processFile)
+walktree('C:\\Users\Abridge\Desktop\PythonLearning', processFile)
 
 
 ### filecmp

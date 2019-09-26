@@ -9,7 +9,7 @@ List = [["W2342323","kalyan","kalyan@chase.com"],["E24323423","Srini","srini@cha
 
 fileWritecontent = open ("Employee.txt",'w')
 for i in List :
-    fileWritecontent.write (str(i))
+    fileWritecontent.write ("{0},{1},{2}".format(i[0:3]))
 fileWritecontent.close()
 
 with open ("Employee.txt","r") as file:
