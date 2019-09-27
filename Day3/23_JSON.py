@@ -15,7 +15,7 @@ print(type(best_food_chains_string))
 print(best_food_chains_string)
 
 # Convert best_food_chains_string back into a list
-print(type(json.loads(best_food_chains_string)))
+print(json.loads(best_food_chains_string))
 
 # Make a dictionary
 fast_food_franchise = {

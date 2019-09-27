@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as etree
 
 # parse xml file
-tree = etree.parse("bookstore.xml")
+tree = etree.parse("books.xml")
 root = tree.getroot()
 print("Root element: ", root)
 
@@ -22,5 +22,5 @@ print(root[0][0].attrib)
 
 
 print(root.findall('book'))     # only in direct child elements
-print(tree.findall('.//author'))     # only in direct child elements
+print(tree.findall('.//price'))     # only in direct child elements
 

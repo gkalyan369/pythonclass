@@ -35,11 +35,12 @@ print(data)
 
 
 
-parameters = {"segmentLink": 17, "instrument": "OPTIDX", "symbol": "NIFTY", "date": "31MAY2018"}
+parameters = {"segmentLink": 17, "instrument": "OPTIDX", "symbol": "NIFTY", "date": "26SEP2019"}
 URL = "https://nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp"
 response = requests.get(URL, params=parameters)
-# print(response.headers)
+#print(response.headers)
 print(response.content)
+print(response.json())      # output is html not json 
 
 
 url = 'https://www.jpmorganchase.com/corporate/About-JPMC/about-us.htm'
@@ -55,6 +56,5 @@ print(page.prettify())
 page.find_all(id='copyright')
 page.find_all(class_='about')
 page.find_all('img')
-
 
 
